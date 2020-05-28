@@ -1,0 +1,9 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
++libext+.tsbvlibp
+-y
+/apps/toshiba/sjsu/verilog/tc240c
++access+r
+tbmf_gates.sv

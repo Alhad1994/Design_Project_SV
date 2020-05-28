@@ -1,0 +1,52 @@
+ncverilog: 15.20-s076: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+file: tbmf_gates.sv
+reg signed [19:0][31:0] din,win;
+                 |
+ncvlog: *E,EXPIDN (tbmf_gates.sv,9|17): expecting an identifier [3.2][3.8][3.9(IEEE)].
+reg signed [19:0][63:0] mp;
+                 |
+ncvlog: *E,EXPIDN (tbmf_gates.sv,10|17): expecting an identifier [3.2][3.8][3.9(IEEE)].
+reg signed [31:0] eres[$];
+                       |
+ncvlog: *E,EXPSID (tbmf_gates.sv,19|23): expecting an identifier immediately after a '$' [2.7.3][A.6(IEEE)].
+reg signed [31:0] eres[$];
+                        |
+ncvlog: *E,ILLPRI (tbmf_gates.sv,19|24): illegal expression primary [4.2(IEEE)].
+task srdata(int drange,reg [19:0] mask);
+              |
+ncvlog: *E,EXPKWD (tbmf_gates.sv,32|14): Expecting port direction keyword 'input', 'output', or 'inout'.
+task srdata(int drange,reg [19:0] mask);
+                         |
+ncvlog: *E,EXPKWD (tbmf_gates.sv,32|25): Expecting port direction keyword 'input', 'output', or 'inout'.
+    repeat($urandom_range(drange)) begin
+         |
+ncvlog: *E,EXPKWD (tbmf_gates.sv,33|9): Expecting port direction keyword 'input', 'output', or 'inout'.
+        for(int ix=0; ix < 20; ix=ix+1) begin
+          |
+ncvlog: *E,EXPKWD (tbmf_gates.sv,34|10): Expecting port direction keyword 'input', 'output', or 'inout'.
+    for(int ix=0; ix < 20; ix=ix+1) begin
+      |
+ncvlog: *E,EXPKWD (tbmf_gates.sv,42|6): Expecting port direction keyword 'input', 'output', or 'inout'.
+endtask : srdata
+        |
+ncvlog: *E,EXPKWD (tbmf_gates.sv,60|8): Expecting port direction keyword 'input', 'output', or 'inout'.
+task Die(input string msg);
+   |
+ncvlog: *E,EXPKWD (tbmf_gates.sv,62|3): Expecting port direction keyword 'input', 'output', or 'inout'.
+task Die(input string msg);
+                        |
+ncvlog: *E,EXPCORP (tbmf_gates.sv,62|24): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+task Die(input string msg);
+                        |
+ncvlog: *E,EXPCORP (tbmf_gates.sv,62|24): Expecting a ',' or ')' [12.3.2(IEEE)].
+    $display("\n\n\n\nError --- Error --- Error\n%s",msg);
+           |
+ncvlog: *E,EXPENM (tbmf_gates.sv,63|11): expecting the keyword 'endmodule' [12.1(IEEE)].
+	module worklib.top:sv
+		errors: 14, warnings: 0
+endmodule : top
+          |
+ncvlog: *E,EXPMPA (tbmf_gates.sv,141|10): expecting the keyword 'module', 'macromodule' or 'primitive'[A.1].
+ncvlog: *W,LIBNOU: Library "/apps/toshiba/sjsu/verilog/tc240c" given but not used.
+ncvlog: *F,NOTOPL: no top-level unit found, must have recursive instances.
+ncverilog: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 2).
