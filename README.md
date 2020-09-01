@@ -1,4 +1,4 @@
-# Design_Project_SV
+# Design_Project (System_Verilog)
 •	The Design consists of multiple 32-bit inputs multiplied and addition of every multiplier result
 
 •	Implemented 3 stage pipeline so design is optimized to run at 200 MHZ instead of 25 MHZ
